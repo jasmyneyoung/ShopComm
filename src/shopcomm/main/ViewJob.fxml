@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="shopcomm.main.ViewJobController">
+   <children>
+      <Button fx:id="homeBtn" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goHome" prefHeight="49.0" prefWidth="49.0" text="homeButton">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jasmy/Documents/CAPSTONE/PROGRAM/ShopComm/src/shopcomm/main/resources/icons/home.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <TableView layoutX="95.0" layoutY="73.0" prefHeight="314.0" prefWidth="491.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Type" />
+          <TableColumn prefWidth="305.0" text="Description" />
+            <TableColumn prefWidth="71.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="addLabor" layoutX="12.0" layoutY="132.0" mnemonicParsing="false" onAction="#addLabor" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: #47c1c4;" text="Add Labor">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="addParts" layoutX="12.0" layoutY="182.0" mnemonicParsing="false" onAction="#addParts" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: #47c1c4;" text="Add Parts">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
